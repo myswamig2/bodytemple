@@ -1,0 +1,1104 @@
+<!-- =========================================================
+SGI — The Temple Is the Body
+Module 0 (Foundation): The 5 Major Human Body Systems (SGI Mapping)
++ Obi / 4-Cowrie “5 Possibilities” Layer (Aláfíà • Ejìfé • Ètàwà • Òkànràn • Òyèkú)
+
+File: sgi-body-temple-5-systems-obi-layer.html
+
+Notes:
+- Put this file in the SAME folder as: SwamiG.gif (your SGI logo)
+- Fully static (GitHub Pages / Cloudflare Pages friendly)
+- Progress + checkmarks saved locally (localStorage)
+- Images are pulled from Wikimedia Commons (hotlinked). If you prefer, download and place them locally.
+========================================================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="theme-color" content="#0b0b0f" />
+  <title>SGI — The Temple Is the Body | 5 Systems + Obi (4-Cowrie) Layer</title>
+  <meta name="description" content="SwamiG Institute (SGI) Module 0: The Temple Is the Body — 5 body systems mapped to SGI pillars + an Obi/4-cowrie 5-possibility layer." />
+
+  <style>
+    :root{
+      --bg:#0b0b0f;
+      --panel:#11121a;
+      --panel2:#0f1017;
+      --ink:#f2f3f7;
+      --muted:#b8bcc7;
+      --faint:#8b90a0;
+      --line:rgba(255,255,255,.10);
+      --shadow: 0 12px 40px rgba(0,0,0,.45);
+      --accent:#b77bff;       /* SGI purple glow */
+      --accent2:#f2c66a;      /* gold */
+      --good:#47e6a5;         /* success */
+      --danger:#ff5a7a;       /* warning */
+      --ring:rgba(183,123,255,.30);
+      --radius:18px;
+      --radius2:24px;
+      --max:1100px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family:var(--font);
+      color:var(--ink);
+      background:
+        radial-gradient(900px 500px at 12% 6%, rgba(183,123,255,.22), transparent 60%),
+        radial-gradient(900px 520px at 92% 10%, rgba(242,198,106,.16), transparent 60%),
+        radial-gradient(800px 520px at 50% 90%, rgba(71,230,165,.10), transparent 60%),
+        linear-gradient(180deg, #07070a, var(--bg));
+      overflow-x:hidden;
+    }
+
+    a{ color:inherit; text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+
+    .wrap{ max-width:var(--max); margin:0 auto; padding:22px 16px 80px; }
+
+    /* Top bar */
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:12px; padding:10px 12px;
+      border:1px solid var(--line);
+      background:rgba(17,18,26,.55);
+      backdrop-filter: blur(10px);
+      border-radius:999px;
+      box-shadow: var(--shadow);
+      position:sticky; top:10px; z-index:10;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px; min-width:240px;
+    }
+    .logo{
+      width:46px; height:46px; border-radius:14px; overflow:hidden;
+      border:1px solid rgba(255,255,255,.12);
+      box-shadow: 0 0 0 6px rgba(183,123,255,.08), 0 16px 40px rgba(0,0,0,.35);
+      background:rgba(0,0,0,.25);
+      flex:0 0 auto;
+    }
+    .logo img{ width:100%; height:100%; object-fit:cover; display:block; }
+    .brand h1{ font-size:14px; margin:0; letter-spacing:.3px; }
+    .brand .sub{ font-size:12px; color:var(--muted); margin-top:2px; }
+
+    .pills{ display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end; }
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:10px 12px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(15,16,23,.55);
+      box-shadow: 0 0 0 6px rgba(183,123,255,.06);
+      font-size:12px;
+      user-select:none;
+      cursor:pointer;
+    }
+    .pill:hover{ text-decoration:none; border-color: rgba(183,123,255,.35); }
+    .pill strong{ font-weight:700; }
+    .pill .dot{ width:10px; height:10px; border-radius:999px; background:var(--accent); box-shadow:0 0 18px rgba(183,123,255,.55); }
+    .pill.gold .dot{ background:var(--accent2); box-shadow:0 0 18px rgba(242,198,106,.45); }
+    .pill.good .dot{ background:var(--good); box-shadow:0 0 18px rgba(71,230,165,.45); }
+
+    /* Hero */
+    .hero{
+      margin:20px 0 18px;
+      border-radius: var(--radius2);
+      border:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(17,18,26,.70), rgba(17,18,26,.35));
+      box-shadow: var(--shadow);
+      padding:22px 18px;
+      position:relative;
+      overflow:hidden;
+    }
+    .hero:before{
+      content:"";
+      position:absolute; inset:-2px;
+      background:
+        radial-gradient(700px 260px at 15% 30%, rgba(183,123,255,.20), transparent 60%),
+        radial-gradient(700px 260px at 85% 10%, rgba(242,198,106,.14), transparent 60%);
+      pointer-events:none;
+    }
+    .hero .grid{
+      position:relative;
+      display:grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap:14px;
+      align-items:start;
+    }
+    .kicker{
+      display:inline-flex; gap:10px; align-items:center;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(11,11,15,.35);
+      width:fit-content;
+      font-size:12px;
+      color:var(--muted);
+    }
+    .kicker .spark{
+      width:10px; height:10px; border-radius:50%;
+      background: radial-gradient(circle at 30% 30%, #fff, var(--accent) 40%, rgba(183,123,255,.2) 70%);
+      box-shadow: 0 0 18px rgba(183,123,255,.55);
+    }
+    .hero h2{
+      margin:10px 0 8px;
+      font-size:28px;
+      line-height:1.12;
+      letter-spacing:.2px;
+    }
+    .hero p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.55;
+      font-size:14px;
+    }
+    .hero .callouts{
+      margin-top:14px;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    .callout{
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(15,16,23,.60);
+      border-radius: 16px;
+      padding:12px 12px;
+    }
+    .callout .t{ font-size:12px; color:var(--faint); margin:0 0 6px; }
+    .callout .v{ margin:0; font-size:13px; color:var(--ink); }
+
+    .hero .progressCard{
+      border:1px solid rgba(255,255,255,.12);
+      border-radius: 18px;
+      background: rgba(15,16,23,.65);
+      padding:14px 14px;
+      box-shadow: 0 0 0 6px rgba(183,123,255,.06);
+    }
+    .progressCard h3{ margin:0 0 10px; font-size:14px; }
+    .bar{
+      height:10px;
+      background: rgba(255,255,255,.08);
+      border-radius:999px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.10);
+    }
+    .bar > div{
+      height:100%;
+      width:0%;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      border-radius:999px;
+      box-shadow: 0 0 18px rgba(183,123,255,.35);
+      transition: width .25s ease;
+    }
+    .small{
+      margin-top:10px;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.45;
+    }
+
+    /* Obi legend */
+    .obiLegend{
+      margin-top:14px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(11,11,15,.28);
+      border-radius: 18px;
+      padding:12px;
+    }
+    .obiLegend .hdr{
+      display:flex; gap:10px; align-items:center; justify-content:space-between;
+      margin-bottom:8px;
+    }
+    .obiLegend .hdr strong{ font-size:13px; }
+    .legendRow{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    .obiCard{
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(15,16,23,.45);
+      border-radius: 14px;
+      padding:10px;
+    }
+    .obiTop{
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+      margin-bottom:6px;
+    }
+    .obiName{ font-size:13px; color:var(--ink); font-weight:800; }
+    .obiMode{ font-size:12px; color:var(--muted); }
+    .cow{
+      font-family:var(--mono);
+      font-size:16px;
+      letter-spacing:2px;
+      line-height:1;
+      color:var(--ink);
+      display:inline-flex; align-items:center; gap:8px;
+    }
+    .cow small{
+      font-size:11px; letter-spacing:.2px;
+      color:var(--faint);
+      font-family:var(--font);
+    }
+    .mini{
+      margin-top:6px;
+      font-size:12px;
+      color:var(--muted);
+      line-height:1.45;
+    }
+
+    /* Sections */
+    .section{
+      margin-top:16px;
+      border:1px solid var(--line);
+      border-radius: var(--radius2);
+      background: rgba(17,18,26,.45);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .sectionHeader{
+      padding:14px 14px;
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:12px;
+      border-bottom:1px solid rgba(255,255,255,.08);
+      background: rgba(15,16,23,.45);
+    }
+    .sectionHeader .left{
+      display:flex; align-items:flex-start; gap:10px;
+    }
+    .badge{
+      width:34px; height:34px; border-radius:12px;
+      display:grid; place-items:center;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(11,11,15,.45);
+      box-shadow: 0 0 0 6px rgba(183,123,255,.06);
+      font-weight:800;
+      color:var(--accent);
+      flex:0 0 auto;
+    }
+    .sectionHeader h3{
+      margin:0; font-size:15px;
+    }
+    .sectionHeader .meta{
+      margin:3px 0 0; font-size:12px; color:var(--muted);
+    }
+
+    .obiTag{
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(11,11,15,.30);
+      border-radius: 16px;
+      padding:10px 10px;
+      min-width:240px;
+      box-shadow: 0 0 0 6px rgba(183,123,255,.04);
+    }
+    .obiTag .top{
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+      margin-bottom:6px;
+    }
+    .obiTag .top .lbl{
+      font-size:11px; letter-spacing:.35px; text-transform:uppercase;
+      color:var(--faint);
+    }
+    .obiTag .top .name{
+      font-size:13px; font-weight:900; color:var(--ink);
+    }
+    .obiTag .cow{ font-size:16px; }
+
+    .content{
+      padding:14px;
+      display:grid;
+      grid-template-columns: 1fr 1.05fr;
+      gap:12px;
+    }
+
+    .panel{
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(15,16,23,.55);
+      border-radius: 18px;
+      padding:12px;
+      overflow:hidden;
+    }
+
+    .imgbox{
+      border-radius: 16px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.20);
+      overflow:hidden;
+      position:relative;
+    }
+    .imgbox img{
+      width:100%;
+      height:auto;
+      display:block;
+      filter: saturate(1.05) contrast(1.02);
+    }
+    .imgcap{
+      padding:10px 10px;
+      font-size:12px;
+      color:var(--muted);
+      border-top:1px solid rgba(255,255,255,.08);
+      background: rgba(11,11,15,.35);
+    }
+
+    .maplist{
+      margin:0; padding:0; list-style:none;
+      display:grid; gap:10px;
+    }
+    .row{
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(11,11,15,.30);
+      border-radius: 14px;
+      padding:10px 10px;
+    }
+    .row .k{
+      font-size:11px; letter-spacing:.35px; text-transform:uppercase;
+      color:var(--faint);
+      margin:0 0 6px;
+    }
+    .row .v{
+      margin:0;
+      color:var(--ink);
+      font-size:13px;
+      line-height:1.45;
+    }
+    .row .v em{ color:var(--muted); font-style:normal; }
+
+    .checklist{
+      margin-top:12px;
+      border-top:1px solid rgba(255,255,255,.08);
+      padding-top:10px;
+    }
+    .checklist h4{ margin:0 0 8px; font-size:13px; }
+    .item{
+      display:flex; gap:10px; align-items:flex-start;
+      padding:8px 8px;
+      border-radius: 12px;
+      border:1px solid rgba(255,255,255,.08);
+      background: rgba(15,16,23,.35);
+      margin-bottom:8px;
+    }
+    .item input{ margin-top:2px; accent-color: var(--accent); }
+    .item label{
+      display:block;
+      font-size:13px;
+      color:var(--muted);
+      line-height:1.45;
+      cursor:pointer;
+    }
+    .item label strong{ color:var(--ink); }
+    .note{
+      margin-top:10px;
+      font-size:12px;
+      color:var(--muted);
+      line-height:1.55;
+    }
+
+    /* Summary table */
+    .tableWrap{ margin-top:16px; }
+    table{
+      width:100%;
+      border-collapse:separate;
+      border-spacing:0;
+      overflow:hidden;
+      border-radius: 18px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(15,16,23,.55);
+    }
+    th,td{
+      padding:12px 12px;
+      border-bottom:1px solid rgba(255,255,255,.08);
+      vertical-align:top;
+      font-size:13px;
+      color:var(--muted);
+    }
+    th{
+      color:var(--ink);
+      text-align:left;
+      font-size:12px;
+      letter-spacing:.35px;
+      text-transform:uppercase;
+      background: rgba(11,11,15,.35);
+    }
+    tr:last-child td{ border-bottom:none; }
+    td strong{ color:var(--ink); }
+
+    footer{
+      margin-top:16px;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.55;
+      text-align:center;
+      opacity:.95;
+    }
+
+    @media (max-width: 920px){
+      .hero .grid{ grid-template-columns:1fr; }
+      .content{ grid-template-columns:1fr; }
+      .brand{ min-width:auto; }
+      .hero h2{ font-size:24px; }
+      .legendRow{ grid-template-columns:1fr; }
+      .obiTag{ min-width:unset; }
+      .sectionHeader{ align-items:flex-start; flex-direction:column; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- Top Bar -->
+    <div class="topbar" role="banner">
+      <div class="brand">
+        <a class="logo" href="https://swamiginstitute.com" target="_blank" rel="noopener" aria-label="SwamiG Institute home">
+          <img src="SwamiG.gif" alt="SwamiG Institute (SGI) Logo" />
+        </a>
+        <div>
+          <h1>SwamiG Institute (SGI)</h1>
+          <div class="sub">Module 0 • The Temple Is the Body • + Obi Layer</div>
+        </div>
+      </div>
+
+      <div class="pills" aria-label="Quick navigation">
+        <a class="pill" href="#systems"><span class="dot"></span><strong>Systems</strong></a>
+        <a class="pill gold" href="#obi"><span class="dot"></span><strong>Obi Layer</strong></a>
+        <a class="pill gold" href="#summary"><span class="dot"></span><strong>Summary Map</strong></a>
+        <button class="pill good" id="btnReset" type="button" title="Reset local progress"><span class="dot"></span><strong>Reset</strong></button>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" aria-label="Module introduction">
+      <div class="grid">
+        <div>
+          <div class="kicker"><span class="spark"></span> SGI Foundation • Whole-Life Healing • Initiate Readiness</div>
+          <h2>The Temple Is the Body (with Obi / 4-Cowrie Layer)</h2>
+          <p>
+            This page teaches the <strong>5 major human body systems</strong> as <em>five internal altars</em>—mapped to
+            SGI pillars, a Khemetian framing, Ifá concepts, and a practical <strong>Obi / 4-cowrie</strong> overlay:
+            <strong>Aláfíà, Ejìfé, Ètàwà, Òkànràn, Òyèkú</strong>.
+          </p>
+
+          <div class="callouts" aria-label="SGI pillars and principles">
+            <div class="callout">
+              <p class="t">3 Pillars (SGI)</p>
+              <p class="v"><strong>Radical Devotion (Auset)</strong> • <strong>Words of Power (Sekert)</strong> • <strong>Infinite Wisdom (Tehuti)</strong></p>
+            </div>
+            <div class="callout">
+              <p class="t">2 Principles (SGI)</p>
+              <p class="v"><strong>Extending Royal Legacy</strong> • <strong>Standing on the shoulders of enlightened ancestors</strong></p>
+            </div>
+          </div>
+
+          <div id="obi" class="obiLegend" aria-label="Obi / 4-cowrie legend">
+            <div class="hdr">
+              <strong>Obi / 4-Cowrie “5 Possibilities” (Teaching Overlay)</strong>
+              <span style="font-size:12px;color:var(--muted);">Legend: ○ = open • ● = closed</span>
+            </div>
+
+            <div class="legendRow">
+              <div class="obiCard">
+                <div class="obiTop">
+                  <div>
+                    <div class="obiName">Aláfíà</div>
+                    <div class="obiMode">Clarity / Peace confirmation</div>
+                  </div>
+                  <div class="cow">○○○○</div>
+                </div>
+                <div class="mini"><strong>Body-layer:</strong> Nervous System → “mind is clear / proceed.”</div>
+              </div>
+
+              <div class="obiCard">
+                <div class="obiTop">
+                  <div>
+                    <div class="obiName">Ejìfé</div>
+                    <div class="obiMode">Balance / reciprocity</div>
+                  </div>
+                  <div class="cow">○○●●</div>
+                </div>
+                <div class="mini"><strong>Body-layer:</strong> Circulatory System → “keep the flow even.”</div>
+              </div>
+
+              <div class="obiCard">
+                <div class="obiTop">
+                  <div>
+                    <div class="obiName">Ètàwà</div>
+                    <div class="obiMode">Yes, but one condition</div>
+                  </div>
+                  <div class="cow">○○○●</div>
+                </div>
+                <div class="mini"><strong>Body-layer:</strong> Respiratory System → “adjust one thing / breathe.”</div>
+              </div>
+
+              <div class="obiCard">
+                <div class="obiTop">
+                  <div>
+                    <div class="obiName">Òkànràn</div>
+                    <div class="obiMode">Caution / obstacle</div>
+                  </div>
+                  <div class="cow">○●●●</div>
+                </div>
+                <div class="mini"><strong>Body-layer:</strong> Digestive System → “clean input / simplify / purge.”</div>
+              </div>
+
+              <div class="obiCard">
+                <div class="obiTop">
+                  <div>
+                    <div class="obiName">Òyèkú</div>
+                    <div class="obiMode">Closure / stop / deep work</div>
+                  </div>
+                  <div class="cow">●●●●</div>
+                </div>
+                <div class="mini"><strong>Body-layer:</strong> Musculoskeletal System → “stabilize / ancestral foundation.”</div>
+              </div>
+
+              <div class="obiCard">
+                <div class="obiTop">
+                  <div>
+                    <div class="obiName">How to use it</div>
+                    <div class="obiMode">2-layer reading</div>
+                  </div>
+                  <div class="cow"><small>1) Obi meaning</small></div>
+                </div>
+                <div class="mini">
+                  <strong>Step 2:</strong> Ask “Which body-altar is speaking?” Then apply the <em>1-minute prescription</em> from that system card.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="note">
+            Tip: Check off the exercises in each system card. Your progress saves on this device (localStorage).
+          </p>
+        </div>
+
+        <aside class="progressCard" aria-label="Progress">
+          <h3>Progress Tracker</h3>
+          <div class="bar" aria-hidden="true"><div id="barFill"></div></div>
+          <div class="small" id="barText">0 of 0 items completed</div>
+
+          <div class="small" style="margin-top:12px;">
+            <strong>Suggested flow:</strong><br/>
+            1) Read the system + image<br/>
+            2) Note the Obi overlay (pattern + name)<br/>
+            3) Complete the 3 practices<br/>
+            4) Reflect: “How does this altar behave in my life?”
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <div id="systems"></div>
+
+    <!-- 1 Nervous -->
+    <section class="section" aria-label="Nervous system">
+      <div class="sectionHeader">
+        <div class="left">
+          <div class="badge">1</div>
+          <div>
+            <h3>Nervous System</h3>
+            <p class="meta">Control • Communication • Direction (Brain • Spinal cord • Nerves)</p>
+          </div>
+        </div>
+
+        <div class="obiTag" aria-label="Obi overlay">
+          <div class="top">
+            <div class="lbl">Obi overlay</div>
+            <div class="name">Aláfíà</div>
+          </div>
+          <div class="cow">○○○○ <small>“mind is clear / proceed”</small></div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="panel">
+          <div class="imgbox">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Nervous%20system%20diagram-en.svg"
+              alt="Diagram of the human nervous system (Wikimedia Commons)"
+              loading="lazy"
+            />
+            <div class="imgcap">Nervous system overview (diagram).</div>
+          </div>
+
+          <div class="checklist">
+            <h4>Practice (3 steps)</h4>
+            <div class="item">
+              <input type="checkbox" id="nv1" data-save="nv1" />
+              <label for="nv1"><strong>Stillness drill (3 minutes):</strong> sit, scan sensations, name 3 signals your body is sending.</label>
+            </div>
+            <div class="item">
+              <input type="checkbox" id="nv2" data-save="nv2" />
+              <label for="nv2"><strong>Direction question:</strong> “What is my next right step?” Write one clear action.</label>
+            </div>
+            <div class="item">
+              <input type="checkbox" id="nv3" data-save="nv3" />
+              <label for="nv3"><strong>Clean input:</strong> choose 1 hour with no noise (no social, no news) to protect the mind.</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <ul class="maplist">
+            <li class="row">
+              <p class="k">SGI Pillar</p>
+              <p class="v"><strong>Infinite Wisdom (Tehuti)</strong> — perception, interpretation, decision</p>
+            </li>
+            <li class="row">
+              <p class="k">Obi (4-cowrie) layer</p>
+              <p class="v"><strong>Aláfíà (○○○○)</strong> — clarity/peace confirmation → “proceed with clean mind.”</p>
+            </li>
+            <li class="row">
+              <p class="k">Ifá concept</p>
+              <p class="v"><strong>Orí</strong> (inner guidance & destiny navigation)</p>
+            </li>
+            <li class="row">
+              <p class="k">Key Teaching</p>
+              <p class="v">The nervous system is the body’s <strong>oracle network</strong>: signal → meaning → direction.</p>
+            </li>
+          </ul>
+
+          <p class="note">
+            Reflection: When you seek guidance, are your signals calm (Aláfíà) or noisy?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 Circulatory -->
+    <section class="section" aria-label="Circulatory system">
+      <div class="sectionHeader">
+        <div class="left">
+          <div class="badge">2</div>
+          <div>
+            <h3>Circulatory (Cardiovascular) System</h3>
+            <p class="meta">Transport • Life-flow (Heart • Blood • Vessels)</p>
+          </div>
+        </div>
+
+        <div class="obiTag" aria-label="Obi overlay">
+          <div class="top">
+            <div class="lbl">Obi overlay</div>
+            <div class="name">Ejìfé</div>
+          </div>
+          <div class="cow">○○●● <small>“balance / reciprocity”</small></div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="panel">
+          <div class="imgbox">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Circulatory%20System%20en.svg"
+              alt="Labeled diagram of major arteries and veins (Wikimedia Commons)"
+              loading="lazy"
+            />
+            <div class="imgcap">Circulatory system (arteries & veins).</div>
+          </div>
+
+          <div class="checklist">
+            <h4>Practice (3 steps)</h4>
+            <div class="item">
+              <input type="checkbox" id="cv1" data-save="cv1" />
+              <label for="cv1"><strong>Heart offering:</strong> write 1 line of gratitude, then do 10 slow breaths.</label>
+            </div>
+            <div class="item">
+              <input type="checkbox" id="cv2" data-save="cv2" />
+              <label for="cv2"><strong>Life-flow walk (10 minutes):</strong> walk lightly, feel your pulse, return to calm.</label>
+            </div>
+            <div class="item">
+              <input type="checkbox" id="cv3" data-save="cv3" />
+              <label for="cv3"><strong>Protection vow:</strong> “I will not poison my heart with needless conflict today.”</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <ul class="maplist">
+            <li class="row">
+              <p class="k">SGI Pillar</p>
+              <p class="v"><strong>Radical Devotion (Auset)</strong> — devotion as consistent life-flow</p>
+            </li>
+            <li class="row">
+              <p class="k">Obi (4-cowrie) layer</p>
+              <p class="v"><strong>Ejìfé (○○●●)</strong> — balance/reciprocity → “keep the flow even; give & receive.”</p>
+            </li>
+            <li class="row">
+              <p class="k">Ifá concept</p>
+              <p class="v"><strong>Ẹjẹ</strong> (blood as covenant of life)</p>
+            </li>
+            <li class="row">
+              <p class="k">Key Teaching</p>
+              <p class="v">What circulates within you becomes your atmosphere—devotion strengthens; bitterness thickens.</p>
+            </li>
+          </ul>
+
+          <p class="note">
+            Reflection: Where are you out of balance—overgiving, underreceiving, or blocked flow?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 Respiratory -->
+    <section class="section" aria-label="Respiratory system">
+      <div class="sectionHeader">
+        <div class="left">
+          <div class="badge">3</div>
+          <div>
+            <h3>Respiratory System</h3>
+            <p class="meta">Breath • Oxygen exchange (Airways • Lungs • Diaphragm)</p>
+          </div>
+        </div>
+
+        <div class="obiTag" aria-label="Obi overlay">
+          <div class="top">
+            <div class="lbl">Obi overlay</div>
+            <div class="name">Ètàwà</div>
+          </div>
+          <div class="cow">○○○● <small>“yes, but adjust one thing”</small></div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="panel">
+          <div class="imgbox">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Respiratory%20system%20complete%20en.svg"
+              alt="Diagram of the human respiratory system (Wikimedia Commons)"
+              loading="lazy"
+            />
+            <div class="imgcap">Respiratory system (airways & lungs).</div>
+          </div>
+
+          <div class="checklist">
+            <h4>Practice (3 steps)</h4>
+            <div class="item">
+              <input type="checkbox" id="rp1" data-save="rp1" />
+              <label for="rp1"><strong>4–4 breath:</strong> inhale 4, exhale 4, repeat for 3 minutes.</label>
+            </div>
+            <div class="item">
+              <input type="checkbox" id="rp2" data-save="rp2" />
+              <label for="rp2"><strong>Words of power:</strong> speak 1 short affirmation slowly (3 times), with full breath support.</label>
+            </div>
+            <div class="item">
+              <input type="checkbox" id="rp3" data-save="rp3" />
+              <label for="rp3"><strong>Clear the altar:</strong> open a window or step outside for 5 minutes of clean air.</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <ul class="maplist">
+            <li class="row">
+              <p class="k">SGI Pillar</p>
+              <p class="v"><strong>Words of Power (Sekert)</strong> — speech as structured breath</p>
+            </li>
+            <li class="row">
+              <p class="k">Obi (4-cowrie) layer</p>
+              <p class="v"><strong>Ètàwà (○○○●)</strong> — “yes, but” → one restriction changes the whole breath; adjust the condition.</p>
+            </li>
+            <li class="row">
+              <p class="k">Ifá concept</p>
+              <p class="v"><strong>Ẹmi</strong> (breath/spirit) • vibration, prayer, incantation</p>
+            </li>
+            <li class="row">
+              <p class="k">Key Teaching</p>
+              <p class="v">Breath is the bridge: body ↔ mind ↔ spirit. Change the breath, change the state.</p>
+            </li>
+          </ul>
+
+          <p class="note">
+            Reflection: What is your “one thing” today—pace, posture, or the words you speak?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 Digestive -->
+    <section class="section" aria-label="Digestive system">
+      <div class="sectionHeader">
+        <div class="left">
+          <div class="badge">4</div>
+          <div>
+            <h3>Digestive System</h3>
+            <p class="meta">Breakdown • Absorption • Elimination (Mouth • Stomach • Intestines • Liver)</p>
+          </div>
+        </div>
+
+        <div class="obiTag" aria-label="Obi overlay">
+          <div class="top">
+            <div class="lbl">Obi overlay</div>
+            <div class="name">Òkànràn</div>
+          </div>
+          <div class="cow">○●●● <small>“caution / clean the input”</small></div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="panel">
+          <div class="imgbox">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Digestive%20system%20diagram%20en.svg"
+              alt="Digestive system diagram (Wikimedia Commons)"
+              loading="lazy"
+            />
+            <div class="imgcap">Digestive tract (overview).</div>
+          </div>
+
+          <div class="checklist">
+            <h4>Practice (3 steps)</h4>
+            <div class="item">
+              <input type="checkbox" id="dg1" data-save="dg1" />
+              <label for="dg1"><strong>Sacred meal:</strong> eat 1 meal slowly (no phone), 20 chews per bite.</label>
+            </div>
+            <div class="item">
+              <input type="checkbox" id="dg2" data-save="dg2" />
+              <label for="dg2"><strong>Alchemy journal:</strong> write: “What am I taking in? What must I release?”</label>
+            </div>
+            <div class="item">
+              <input type="checkbox" id="dg3" data-save="dg3" />
+              <label for="dg3"><strong>Clean water:</strong> drink 2 cups of water intentionally, as a cleansing act.</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <ul class="maplist">
+            <li class="row">
+              <p class="k">SGI Anchor</p>
+              <p class="v"><strong>Devotion as discipline</strong> — what you ingest becomes your instrument</p>
+            </li>
+            <li class="row">
+              <p class="k">Obi (4-cowrie) layer</p>
+              <p class="v"><strong>Òkànràn (○●●●)</strong> — caution/obstacle → “clean the input, simplify, release what irritates.”</p>
+            </li>
+            <li class="row">
+              <p class="k">Ifá concept</p>
+              <p class="v"><strong>Aṣẹ</strong> (transformative power) • input → transformation → assimilation</p>
+            </li>
+            <li class="row">
+              <p class="k">Key Teaching</p>
+              <p class="v">Digestion is alchemy: input → transformation → assimilation → release.</p>
+            </li>
+          </ul>
+
+          <p class="note">
+            Reflection: What are your hidden “irritants”—foods, media, people, or habits?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 Musculoskeletal -->
+    <section class="section" aria-label="Musculoskeletal system">
+      <div class="sectionHeader">
+        <div class="left">
+          <div class="badge">5</div>
+          <div>
+            <h3>Musculoskeletal System</h3>
+            <p class="meta">Structure • Protection • Movement (Bones • Muscles • Joints)</p>
+          </div>
+        </div>
+
+        <div class="obiTag" aria-label="Obi overlay">
+          <div class="top">
+            <div class="lbl">Obi overlay</div>
+            <div class="name">Òyèkú</div>
+          </div>
+          <div class="cow">●●●● <small>“stop / stabilize / ancestral foundation”</small></div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="panel">
+          <div class="imgbox">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Human%20skeleton%20front%20en.svg"
+              alt="Human skeleton front view labeled (Wikimedia Commons)"
+              loading="lazy"
+            />
+            <div class="imgcap">Skeletal framework (front view).</div>
+          </div>
+
+          <div class="imgbox" style="margin-top:12px;">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Muscular%20system.svg"
+              alt="Muscular system diagram (Wikimedia Commons)"
+              loading="lazy"
+            />
+            <div class="imgcap">Muscular system (overview).</div>
+          </div>
+
+          <div class="checklist">
+            <h4>Practice (3 steps)</h4>
+            <div class="item">
+              <input type="checkbox" id="ms1" data-save="ms1" />
+              <label for="ms1"><strong>Posture reset:</strong> stack head–shoulders–hips, soften jaw, breathe.</label>
+            </div>
+            <div class="item">
+              <input type="checkbox" id="ms2" data-save="ms2" />
+              <label for="ms2"><strong>Strength vow:</strong> do 1 set each (squats, push-ups, rows) or a gentle substitute.</label>
+            </div>
+            <div class="item">
+              <input type="checkbox" id="ms3" data-save="ms3" />
+              <label for="ms3"><strong>Ancestral gratitude:</strong> speak thanks to those whose “bones” built your path.</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <ul class="maplist">
+            <li class="row">
+              <p class="k">SGI Principle</p>
+              <p class="v"><strong>Standing on the shoulders of enlightened ancestors</strong> — bones as ancestral architecture</p>
+            </li>
+            <li class="row">
+              <p class="k">Obi (4-cowrie) layer</p>
+              <p class="v"><strong>Òyèkú (●●●●)</strong> — closure/stop → “stabilize foundation; consult elders/ancestors; slow down.”</p>
+            </li>
+            <li class="row">
+              <p class="k">Khemetian framing</p>
+              <p class="v"><strong>Ausar</strong> (structure, stability, enduring form) • the body’s “royal frame”</p>
+            </li>
+            <li class="row">
+              <p class="k">Key Teaching</p>
+              <p class="v">A strong foundation makes higher work possible. Weak structure makes spiritual practice unstable.</p>
+            </li>
+          </ul>
+
+          <p class="note">
+            Reflection: Where do you “collapse” in life—posture, boundaries, consistency, or courage?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Summary -->
+    <section class="section tableWrap" id="summary" aria-label="Summary map">
+      <div class="sectionHeader">
+        <div class="left">
+          <div class="badge">∑</div>
+          <div>
+            <h3>Summary Map</h3>
+            <p class="meta">5 Systems • Obi Overlay • SGI Anchors • Ifá Concepts</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content" style="grid-template-columns:1fr;">
+        <div class="panel">
+          <table aria-label="Summary table mapping">
+            <thead>
+              <tr>
+                <th>Body System</th>
+                <th>Obi / 4-Cowrie</th>
+                <th>SGI Anchor</th>
+                <th>Ifá Concept</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Nervous</strong></td>
+                <td><strong>Aláfíà</strong> <span style="font-family:var(--mono);letter-spacing:2px;">○○○○</span> — clarity</td>
+                <td><strong>Infinite Wisdom (Tehuti)</strong></td>
+                <td><strong>Orí</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Circulatory</strong></td>
+                <td><strong>Ejìfé</strong> <span style="font-family:var(--mono);letter-spacing:2px;">○○●●</span> — balance</td>
+                <td><strong>Radical Devotion (Auset)</strong></td>
+                <td><strong>Ẹjẹ</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Respiratory</strong></td>
+                <td><strong>Ètàwà</strong> <span style="font-family:var(--mono);letter-spacing:2px;">○○○●</span> — “yes, but”</td>
+                <td><strong>Words of Power (Sekert)</strong></td>
+                <td><strong>Ẹmi</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Digestive</strong></td>
+                <td><strong>Òkànràn</strong> <span style="font-family:var(--mono);letter-spacing:2px;">○●●●</span> — caution</td>
+                <td><strong>Devotion as discipline</strong></td>
+                <td><strong>Aṣẹ</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Musculoskeletal</strong></td>
+                <td><strong>Òyèkú</strong> <span style="font-family:var(--mono);letter-spacing:2px;">●●●●</span> — stop/closure</td>
+                <td><strong>Royal Legacy + Ancestors</strong></td>
+                <td><strong>Igbẹ́yà</strong></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="note" style="margin-top:10px;">
+            Completion prompt: “My body is a temple. I will master my five altars and bring them into alignment with Absolute Truth.”
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <strong>SwamiG Institute (SGI)</strong> • Module 0 — The Temple Is the Body (with Obi overlay)<br/>
+        Legend: ○ open • ● closed. If you want all images local, download them and replace the Wikimedia URLs with local filenames in the same folder.
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    (function(){
+      const KEY = "sgi_body_temple_5_systems_obi_layer_v1";
+
+      function loadState(){
+        try{ return JSON.parse(localStorage.getItem(KEY) || "{}"); }
+        catch(e){ return {}; }
+      }
+      function saveState(state){
+        localStorage.setItem(KEY, JSON.stringify(state));
+      }
+
+      const state = loadState();
+      const boxes = Array.from(document.querySelectorAll("input[type='checkbox'][data-save]"));
+
+      boxes.forEach(cb => {
+        const k = cb.getAttribute("data-save");
+        cb.checked = !!state[k];
+        cb.addEventListener("change", () => {
+          state[k] = cb.checked;
+          saveState(state);
+          updateProgress();
+        });
+      });
+
+      function updateProgress(){
+        const total = boxes.length;
+        const done = boxes.filter(b => b.checked).length;
+        const pct = total ? Math.round((done / total) * 100) : 0;
+        const fill = document.getElementById("barFill");
+        const text = document.getElementById("barText");
+        if(fill) fill.style.width = pct + "%";
+        if(text) text.textContent = done + " of " + total + " items completed (" + pct + "%)";
+      }
+
+      const btnReset = document.getElementById("btnReset");
+      if(btnReset){
+        btnReset.addEventListener("click", () => {
+          boxes.forEach(b => b.checked = false);
+          localStorage.removeItem(KEY);
+          updateProgress();
+        });
+      }
+
+      updateProgress();
+    })();
+  </script>
+</body>
+</html>
+```0
